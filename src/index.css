@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom animations for notifications */
+@keyframes slide-in-from-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-in {
+  animation-fill-mode: both;
+}
+
+.slide-in-from-right {
+  animation-name: slide-in-from-right;
+}
+
+.fade-in {
+  animation-name: fade-in;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  /* Orange accent colors */
+  .text-orange {
+    color: #ff6b35;
+  }
+  
+  .bg-orange {
+    background-color: #ff6b35;
+  }
+  
+  .border-orange {
+    border-color: #ff6b35;
+  }
+  
+  .hover\:bg-orange:hover {
+    background-color: #ff6b35;
+  }
+  
+  .hover\:text-orange:hover {
+    color: #ff6b35;
+  }
+  
+  /* Navbar transparent background */
+  .navbar-transparent {
+    background: transparent;
+  }
+  
+  .navbar-solid {
+    background-color: #222020;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply px-6 lg:px-8;
+  }
+  
+  .container-width {
+    @apply max-w-7xl mx-auto;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg transition-colors duration-300;
+  }
+  
+  .btn-secondary {
+    @apply border border-orange text-orange hover:bg-orange hover:text-white px-6 py-3 rounded-lg transition-colors duration-300;
+  }
+}
