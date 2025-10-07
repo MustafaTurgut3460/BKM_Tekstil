@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import Breadcrumb from '../components/Breadcrumb'
 
 const BrandsPage = () => {
   const brands = [
@@ -35,15 +36,27 @@ const BrandsPage = () => {
       <Header />
       
       {/* Hero Section with Background */}
-      <div className="relative bg-gradient-to-r from-primary-900 to-primary-700 text-white py-20">
-        <div className="absolute inset-0 bg-black opacity-20"></div>
-        <div className="container-width section-padding relative z-10">
-          <div className="text-center">
-            <h1 className="text-4xl lg:text-5xl font-bold mb-6">Markalarımız</h1>
-            <p className="text-xl text-gray-200">Kaliteli ve güvenilir markalarımızla hizmetinizdeyiz</p>
-          </div>
+      <section className="relative h-[30vh] flex items-center -mt-20 pt-20">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="/arkaplan/dikimfoto.jpg"
+            alt="Markalarımız"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black bg-opacity-30"></div>
         </div>
-      </div>
+
+        {/* Content */}
+        
+      </section>
+
+      {/* Breadcrumb */}
+      <Breadcrumb 
+        items={[
+          { name: 'Markalarımız', href: null }
+        ]} 
+      />
 
 
       {/* Main Content */}
@@ -68,7 +81,7 @@ const BrandsPage = () => {
                   </p>
                   
                   <div className="border-t border-gray-200 pt-4 mt-auto">
-                    <button className="text-red-800 hover:text-red-900 font-medium transition-colors duration-300">
+                    <button className="text-orange-600 hover:text-orange-700 font-medium transition-colors duration-300">
                       DAHA FAZLA BİLGİ AL
                     </button>
                   </div>

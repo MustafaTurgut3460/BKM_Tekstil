@@ -42,7 +42,7 @@ const Footer = () => {
               <Mail className="w-32 h-32" />
             </div>
             <p className="text-lg font-medium relative z-10">
-              Proje ve hizmetlerimiz hakkında daha detaylı bilgi almak için Hemen Arayın! (0368) 315 57 04
+              Proje ve hizmetlerimiz hakkında daha detaylı bilgi almak için Hemen Arayın! 0364 666 02 34
             </p>
           </div>
         </div>
@@ -130,18 +130,18 @@ const Footer = () => {
                 <div className="flex items-start">
                   <MapPin className="w-5 h-5 text-orange mr-3 mt-1 flex-shrink-0" />
                   <span className="text-gray-300 text-sm">
-                    Sefa Mah. Fevzi Çakmak Cad. No:59 Boyabat Sinop
+                    Akkent Mahallesi Akkent 7.cad no:22/1 Çorum/Merkez
                   </span>
                 </div>
                 
                 <div className="flex items-center">
                   <Phone className="w-5 h-5 text-orange mr-3 flex-shrink-0" />
-                  <span className="text-gray-300 text-sm">0 (368) 315 57 34</span>
+                  <span className="text-gray-300 text-sm">0364 666 02 34</span>
                 </div>
                 
                 <div className="flex items-center">
                   <Mail className="w-5 h-5 text-orange mr-3 flex-shrink-0" />
-                  <span className="text-gray-300 text-sm">info@nevantekstil.com.tr</span>
+                  <span className="text-gray-300 text-sm">info@bkmtekstil.com.tr</span>
                 </div>
               </div>
               
@@ -162,7 +162,7 @@ const Footer = () => {
       {/* Floating Action Buttons */}
       <div className="fixed left-4 bottom-4 z-50 flex flex-col space-y-3">
         <a
-          href="https://wa.me/903683155734"
+          href="https://wa.me/903646660234"
           target="_blank"
           rel="noopener noreferrer"
           className="w-14 h-14 bg-green-600 rounded-full flex items-center justify-center shadow-lg hover:bg-green-700 transition-colors duration-300"

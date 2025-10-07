@@ -76,17 +76,17 @@ const ContactPage = () => {
     {
       icon: MapPin,
       title: 'Adres',
-      details: 'Sefa Mah. Fevzi Çakmak Cad. No:59 Boyabat Sinop'
+      details: 'Akkent Mahallesi Akkent 7.cad no:22/1 Çorum/Merkez'
     },
     {
       icon: Phone,
       title: 'Telefon / Fax',
-      details: '0 (368) 315 57 34'
+      details: '0364 666 02 34'
     },
     {
       icon: Mail,
       title: 'E-Posta',
-      details: 'info@nevantekstil.com.tr'
+      details: 'info@bkmtekstil.com.tr'
     }
   ]
 
