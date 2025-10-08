@@ -25,7 +25,7 @@ import ScrollToTop from './components/ScrollToTop'
 
 function App() {
   return (
-    <Router>
+    <Router basename="/BKM_Tekstil">
       <ScrollToTop />
       <div className="min-h-screen">
         <Routes>
